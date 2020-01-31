@@ -1,0 +1,1 @@
+setting up basic target tracker for classic wow raiding
