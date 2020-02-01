@@ -1,3 +1,15 @@
 html {
     background-color: grey;
 }
+
+.boss-list{
+    display: none;
+}
+
+.boss-info-header {
+    font-size: 30px;
+}
+
+.boss-info {
+    font-size: 20px;
+}

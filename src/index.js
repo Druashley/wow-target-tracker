@@ -1,3 +1,10 @@
 // js will go here
+import { setBosses, loadBosses } from "./selection.js"
+import { loadReminders } from "./reminders.js";
 
-console.log('test')
+function startUp () {
+    loadBosses();
+    loadReminders();
+}
+
+startUp();
