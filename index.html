@@ -2,40 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Who's target is it?</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Who's target is it?</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
 <body>
-    <h1 class="title">Raid Target Tracker</h1>
+  <h1 class="title">Raid Target Tracker</h1>
 
-    <label for="raid">Which raid</label>
+  <label for="raid">Which raid</label>
 
-    <select id="raid" name="country">
-      <option value="Molten Core">Molten Core</option>
-      <option value="Blackwing Lair">Blackwing Lair</option>
+  <select class="raid" id="raid">
+    <option value="none"></option>
+    <option value="mc">Molten Core</option>
+    <option value="bwl">Blackwing Lair</option>
+  </select>
+
+  <div class='boss-list-container'>
+    <select class="boss-list" id="boss-list-mc">
     </select>
+  </div>
 
+  <div class="target-list-container">
+    <div><img class="icon" src="icons/skull.png"><input class="person" type="text" id="skull"></div>
+    <div><img class="icon" src="icons/x.png"><input class="person" type="text" id="x"></div>
+    <div><img class="icon" src="icons/moon.png"><input class="person" type="text" id="moon"></div>
+    <div> <img class="icon" src="icons/circle.png"> <input class="person" type="text" id="circle"></div>
+    <div><img class="icon" src="icons/triangle.png"><input class="person" type="text" id="triangle"></div>
+    <div><img class="icon" src="icons/diamond.png"><input class="person" type="text" id="daimond"></div>
+    <div><img class="icon" src="icons/square.png"><input class="person" type="text" id="square"></div>
+    <div><img class="icon" src="icons/star.png"><input class="person" type="text" id="star"></div>
+  </div>
 
-      <select id="raid" name="country">
-        <option value="lucifron">Lucifron</option>
-        <option value="magmadar">Magmadar</option>
-        <option value="gehennas">Gehennas</option>
-        <option value="garr">Garr</option>
-        <option value="shazzrah">Shazzrah</option>
-        <option value="baron-geddon">Baron Geddon</option>
-        <option value="sulfuron-harbinger">Sulfuron Harbinger</option>
-        <option value="golemagg">Golemagg</option>
-        <option value="majordomo">Majordomo</option>
-        <option value="ragnaros">Ragnaros</option>
-      </select>
+  <div class='boss-info-header'>reminders
+    <div class="boss-info"> <ul>Tanks Needed:</ul><ul>CC Needed:</ul><ul>Dispel/Decurse Needed:</ul><ul>Other:</ul></div>
+  </div>
 
-
-
-    <script type="module" src="./main.js"></script>
+  <script type="module" src="./main.js"></script>
 </body>
 
 </html>
