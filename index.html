@@ -12,32 +12,48 @@
 <body>
   <h1 class="title">Raid Target Tracker</h1>
 
-  <label for="raid">Which raid</label>
+  <div class="selection-list-container">
+    <div class="raid-list-container">
+      <select class="raid" id="raid">
+        <option value="none">Pick Raid</option>
+        <option value="mc">Molten Core</option>
+        <option value="bwl">Blackwing Lair</option>
+      </select>
+    </div>
 
-  <select class="raid" id="raid">
-    <option value="none"></option>
-    <option value="mc">Molten Core</option>
-    <option value="bwl">Blackwing Lair</option>
-  </select>
-
-  <div class='boss-list-container'>
-    <select class="boss-list" id="boss-list-mc">
-    </select>
+    <div class='boss-list-container'>
+      <select class="boss-list" id="boss-list-mc">
+      </select>
+    </div>
   </div>
 
   <div class="target-list-container">
-    <div><img class="icon" src="icons/skull.png"><input class="person" type="text" id="skull"></div>
-    <div><img class="icon" src="icons/x.png"><input class="person" type="text" id="x"></div>
-    <div><img class="icon" src="icons/moon.png"><input class="person" type="text" id="moon"></div>
-    <div> <img class="icon" src="icons/circle.png"> <input class="person" type="text" id="circle"></div>
-    <div><img class="icon" src="icons/triangle.png"><input class="person" type="text" id="triangle"></div>
-    <div><img class="icon" src="icons/diamond.png"><input class="person" type="text" id="daimond"></div>
-    <div><img class="icon" src="icons/square.png"><input class="person" type="text" id="square"></div>
-    <div><img class="icon" src="icons/star.png"><input class="person" type="text" id="star"></div>
+    <form>
+      <div><img class="icon" src="icons/skull.png"><input placeholder="Skull" class="person" type="text" id="skull">
+      </div>
+      <div><img class="icon" src="icons/x.png"><input placeholder="X" class="person" type="text" id="x"></div>
+      <div><img class="icon" src="icons/moon.png"><input placeholder="Moon" class="person" type="text" id="moon"></div>
+      <div><img class="icon" src="icons/circle.png"><input placeholder="Circle" class="person" type="text" id="circle">
+      </div>
+      <div><img class="icon" src="icons/triangle.png"><input placeholder="Triangle" class="person" type="text"
+          id="triangle"></div>
+      <div><img class="icon" src="icons/diamond.png"><input placeholder="Diamond" class="person" type="text"
+          id="daimond"></div>
+      <div><img class="icon" src="icons/square.png"><input placeholder="Square" class="person" type="text" id="square">
+      </div>
+      <div><img class="icon" src="icons/star.png"><input placeholder="Star" class="person" type="text" id="star"></div>
+    </form><button class="clear-all">Clear All</button>
   </div>
 
-  <div class='boss-info-header'>reminders
-    <div class="boss-info"> <ul>Tanks Needed:</ul><ul>CC Needed:</ul><ul>Dispel/Decurse Needed:</ul><ul>Other:</ul></div>
+
+  <div class='boss-info-header'>
+    <div class="reminder-title">Reminders</div>
+    <div class="boss-info">
+      <ul>Tanks Needed:</ul>
+      <ul>CC Needed:</ul>
+      <ul>Dispel/Decurse Needed:</ul>
+      <ul>Other:</ul>
+    </div>
   </div>
 
   <script type="module" src="./main.js"></script>
