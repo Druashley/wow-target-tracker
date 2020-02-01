@@ -1,5 +1,16 @@
 html {
-    background-color: grey;
+    background-color: #898d71;
+    background-image: url("./icons/aow.png");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100px;
+    
+}
+
+body {
+    font-family: sans-serif;
+    background: rgba(0, 0, 0, 0.25);
+    border:  #FFC300  solid 1px;
 }
 
 .boss-list{
@@ -8,8 +19,54 @@ html {
 
 .boss-info-header {
     font-size: 30px;
+    border:  #FFC300  solid 1px;
+    padding: 15px;
+    font-weight: 750;
+}
+
+.title  {
+    color:  black ;
+    font-size: 45px;
 }
 
 .boss-info {
     font-size: 20px;
+}
+
+.target-list-container {
+    padding: 10px;
+    border:  #FFC300  solid 1px;
+}
+
+.icon {
+    padding: 2px;
+    opacity: 100%;
+}
+
+.person {
+    opacity: 100%;
+    font-weight: 500;
+}
+
+select {
+    width: 25%;
+    border-radius: 15px;
+}
+
+input {
+    border-radius: 15px;
+    background-color: #f2f2f2;
+}
+
+input:focus {
+    background-color: #e6e6e6
+}
+
+.reminder-title{
+    text-decoration: underline;
+}
+
+.selection-list-container{
+    padding: 15px;
+    border:  #FFC300  solid 1px;
 }

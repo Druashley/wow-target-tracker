@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -68,68 +68,76 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__selection_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__reminders_js__ = __webpack_require__(3);
-// js will go here
-
-
-
-function startUp () {
-    Object(__WEBPACK_IMPORTED_MODULE_0__selection_js__["a" /* loadBosses */])();
-    Object(__WEBPACK_IMPORTED_MODULE_1__reminders_js__["a" /* loadReminders */])();
-}
-
-startUp();
-
-/***/ }),
-/* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export setBosses */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return loadBosses; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__domelements_js__ = __webpack_require__(2);
-
-
-const setBosses = () => {
-    let x = __WEBPACK_IMPORTED_MODULE_0__domelements_js__["c" /* raid */].value;
-    __WEBPACK_IMPORTED_MODULE_0__domelements_js__["b" /* bossList */].style.display = 'block'
-    if (x == 'none') {__WEBPACK_IMPORTED_MODULE_0__domelements_js__["b" /* bossList */].innerHTML = ''; __WEBPACK_IMPORTED_MODULE_0__domelements_js__["b" /* bossList */].style.display = 'none'}
-    if (x == "mc") {__WEBPACK_IMPORTED_MODULE_0__domelements_js__["b" /* bossList */].innerHTML = '<option></option><option value="lucifron">Lucifron</option><option value="magmadar">Magmadar</option><option value="gehennas">Gehennas</option><option value="garr">Garr</option><option value="baronGeddon">Baron Geddon</option><option value="shazzrah">Shazzrah</option><option value="sulfuronHarbinger">Sulfuron Harbinger</option><option value="golemagg">Golemagg</option><option value="majordomo">Majordomo</option><option value="ragnaros">Ragnaros</option>';}
-    if (x == 'bwl') {__WEBPACK_IMPORTED_MODULE_0__domelements_js__["b" /* bossList */].innerHTML = '<option value="boss-one">Boss #1</option><option value="boss-two">Boss #2</option><option value="boss-three">Boss #3</option><option value="boss-four">Boss #4</option><option value="boss-five">Boss #5</option><option value="boss-six">Boss #6</option>';}
-
-}
-
-
-
-const loadBosses = () => {__WEBPACK_IMPORTED_MODULE_0__domelements_js__["c" /* raid */].addEventListener("click", setBosses)}
-
-
-
-
-
-
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* unused harmony export title */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return raid; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return raid; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return bossList; });
 /* unused harmony export bwlBossList */
 /* unused harmony export bossListContainer */
 /* unused harmony export targetListContainer */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return bossInfo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return clearAll; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return person; });
 const title = document.querySelector('.title');
 const raid = document.querySelector('.raid');
 const bossList = document.querySelector('.boss-list');
 const bossListContainer = document.querySelector('.boss-list-container')
 const targetListContainer = document.querySelector('.target-list-container')
 const bossInfo = document.querySelector('.boss-info');
+const clearAll = document.querySelector('.clear-all');
+const person = document.querySelectorAll(".person");
+
+
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__selection_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__reminders_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__button_js__ = __webpack_require__(4);
+// js will go here
+
+
+
+
+function startUp () {
+    Object(__WEBPACK_IMPORTED_MODULE_0__selection_js__["a" /* loadBosses */])();
+    Object(__WEBPACK_IMPORTED_MODULE_1__reminders_js__["a" /* loadReminders */])();
+    Object(__WEBPACK_IMPORTED_MODULE_2__button_js__["a" /* removeAllButton */])();
+}
+
+startUp();
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export setBosses */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return loadBosses; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__domelements_js__ = __webpack_require__(0);
+
+
+const setBosses = () => {
+    let x = __WEBPACK_IMPORTED_MODULE_0__domelements_js__["e" /* raid */].value;
+    __WEBPACK_IMPORTED_MODULE_0__domelements_js__["b" /* bossList */].style.display = 'block'
+    if (x == 'none') {__WEBPACK_IMPORTED_MODULE_0__domelements_js__["b" /* bossList */].innerHTML = ''; __WEBPACK_IMPORTED_MODULE_0__domelements_js__["b" /* bossList */].style.display = 'none'}
+    if (x == "mc") {__WEBPACK_IMPORTED_MODULE_0__domelements_js__["b" /* bossList */].innerHTML = '<option>Pick Boss</option><option value="lucifron">Lucifron</option><option value="magmadar">Magmadar</option><option value="gehennas">Gehennas</option><option value="garr">Garr</option><option value="baronGeddon">Baron Geddon</option><option value="shazzrah">Shazzrah</option><option value="sulfuronHarbinger">Sulfuron Harbinger</option><option value="golemagg">Golemagg</option><option value="majordomo">Majordomo</option><option value="ragnaros">Ragnaros</option>';}
+    if (x == 'bwl') {__WEBPACK_IMPORTED_MODULE_0__domelements_js__["b" /* bossList */].innerHTML = '<option value="boss-one">Boss #1</option><option value="boss-two">Boss #2</option><option value="boss-three">Boss #3</option><option value="boss-four">Boss #4</option><option value="boss-five">Boss #5</option><option value="boss-six">Boss #6</option>';}
+
+}
+
+
+
+const loadBosses = () => {__WEBPACK_IMPORTED_MODULE_0__domelements_js__["e" /* raid */].addEventListener("click", setBosses)}
+
+
+
+
+
 
 
 
@@ -139,7 +147,7 @@ const bossInfo = document.querySelector('.boss-info');
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return loadReminders; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__domelements_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__domelements_js__ = __webpack_require__(0);
 
 
 const setReminders = () => {
@@ -165,6 +173,26 @@ const setReminders = () => {
 const loadReminders = () => { __WEBPACK_IMPORTED_MODULE_0__domelements_js__["b" /* bossList */].addEventListener("click", setReminders) }
 
 
+
+
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return removeAllButton; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__domelements_js__ = __webpack_require__(0);
+
+
+
+function remove () {
+    __WEBPACK_IMPORTED_MODULE_0__domelements_js__["d" /* person */].forEach(x => {x.value = ''})
+}
+
+
+const removeAllButton = () =>   {__WEBPACK_IMPORTED_MODULE_0__domelements_js__["c" /* clearAll */].addEventListener("click", remove)}
 
 
 
