@@ -70,3 +70,7 @@ input:focus {
     padding: 15px;
     border:  #FFC300  solid 1px;
 }
+
+.chat-copy {
+    width: 400px;
+}
