@@ -42,10 +42,16 @@
       <div><img class="icon" src="icons/square.png"><input placeholder="Square" class="person" type="text" id="square">
       </div>
       <div><img class="icon" src="icons/star.png"><input placeholder="Star" class="person" type="text" id="star"></div>
-    </form><button class="clear-all">Clear All</button>
-    <button class="create-chat">Create chat</button>
+    </form>
+    <div class="button-container">
+      <button class="clear-all">Clear All</button>
+      <button class="create-chat">Copy to clipboard</button>
+      <span class="tooltip"></span>
+    </div> 
   </div>
-  <input readonly class="chat-copy">
+
+
+  <textarea placeholder="Copy paste this text into chat" class="chat-copy" rows="4" cols="50"></textarea>
 
 
   <div class='boss-info-header'>
