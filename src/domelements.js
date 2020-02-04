@@ -19,5 +19,7 @@ const starInput = document.querySelector('#star')
 
 const chatCopy = document.querySelector('.chat-copy')
 
+const toolTip = document.querySelector('.tooltip');
 
-export { title, raid, bossList, bwlBossList, bossListContainer, targetListContainer, bossInfo, clearAll, person, createChat, skullInput, xInput, moonInput, circleInput, triangleInput, diamondInput, squareInput, starInput, chatCopy}
+
+export { title, raid, bossList, bwlBossList, bossListContainer, targetListContainer, bossInfo, clearAll, person, createChat, skullInput, xInput, moonInput, circleInput, triangleInput, diamondInput, squareInput, starInput, chatCopy, toolTip}

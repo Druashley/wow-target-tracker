@@ -56,9 +56,10 @@ select {
 input {
     border-radius: 15px;
     background-color: #f2f2f2;
+    padding-left: 10px;
 }
 
-input:focus {
+input:focus, .chat-copy:focus, button:hover {
     background-color: #e6e6e6
 }
 
@@ -73,4 +74,27 @@ input:focus {
 
 .chat-copy {
     width: 400px;
+    background-color: #f2f2f2;
 }
+
+button {
+    background: #f2f2f2;
+    padding: 2px;
+}
+
+.button-container{
+    padding-top: 10px;
+}
+
+.tooltip {
+    color:red;
+    opacity: 1;
+    font-size: 30px;
+    transition: 0s;
+}
+
+.tooltip-transparent {
+    opacity: 0;
+    transition: 1s;
+}
+
