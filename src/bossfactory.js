@@ -1,6 +1,7 @@
 import {bossInfo} from "./domelements.js"
 
-const bossFactory = ({tankCount, ccNeeded, dispelNeeded, decurseNeeded, description }) => ({
+const bossFactory = ({id,tankCount, ccNeeded, dispelNeeded, decurseNeeded, description }) => ({
+    id,
     tankCount,
     ccNeeded,
     dispelNeeded,
@@ -11,6 +12,6 @@ const bossFactory = ({tankCount, ccNeeded, dispelNeeded, decurseNeeded, descript
     }
 })
 
-//({tankCount: '1', ccNeeded: 'N/A', dispelNeeded: false, decurseNeeded: false, description: ''})
+//({id:'',tankCount: '1', ccNeeded: 'N/A', dispelNeeded: false, decurseNeeded: false, description: ''})
 
 export { bossFactory }
