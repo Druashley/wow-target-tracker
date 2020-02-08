@@ -15,6 +15,15 @@ const setReminders = () => {
     if (reminder == 'majordomo') {mcBossList[8].setReminder()};
     if (reminder == 'ragnaros') {mcBossList[9].setReminder()};
 
+    if (reminder == 'razorgore') {console.log('razorgore')};
+    if (reminder == 'vaelastrasz') {console.log('vaelastrasz')};
+    if (reminder == 'broodlordLashlayer') {console.log('broodlordLashlayer')};
+    if (reminder == 'firemaw') {console.log('firemaw')};
+    if (reminder == 'ebonroc') {console.log('ebonroc')};
+    if (reminder == 'flamegor') {console.log('flamegor')};
+    if (reminder == 'chromaggus') {console.log('chromaggus')};
+    if (reminder == 'nefarian') {console.log('nefarian')};
+    
 }
 
 
